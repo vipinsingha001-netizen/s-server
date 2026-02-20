@@ -9,7 +9,9 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:3000","https://s-admin-h1g0.onrender.com","https://www.s-admin-h1g0.onrender.com"],
+    origin: ["http://localhost:3000",
+             "https://s-admin-h1g0.onrender.com",
+             "https://www.s-admin-h1g0.onrender.com"],
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
